@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu dengan HTML dan CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7fafc; /* Warna latar belakang */
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Jarak antar kartu */
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px; /* Lebar kartu */
+        }
+        .card img {
+            width: 100%;
+            height: 200px; /* Tinggi gambar */
+            object-fit: cover; /* Memastikan gambar tetap proporsional */
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            margin: 16px;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #4a5568; /* Warna teks */
+            margin: 0 16px 16px; /* Margin bawah */
+        }
+        .card button {
+            background-color: #3182ce; /* Warna tombol */
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 16px 16px; /* Margin bawah */
+            transition: background-color 0.3s;
+        }
+        .card button:hover {
+            background-color: #2b6cb0; /* Warna tombol saat hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Gambar Kartu 1">
+            <h2>Kartu 1</h2>
+            <p>Deskripsi singkat untuk kartu pertama.</p>
+            <button>Aksi 1</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Gambar Kartu 2">
+            <h2>Kartu 2</h2>
+            <p>Deskripsi singkat untuk kartu kedua.</p>
+            <button>Aksi 2</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Gambar Kartu 3">
+            <h2>Kartu 3</h2>
+            <p>Deskripsi singkat untuk kartu ketiga.</p>
+            <button>Aksi 3</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Gambar Kartu 4">
+            <h2>Kartu 4</h2>
+            <p>Deskripsi singkat untuk kartu keempat.</p>
+            <button>Aksi 4</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Gambar Kartu 5">
+            <h2>Kartu 5</h2>
+            <p>Deskripsi singkat untuk kartu kelima.</p>
+            <button>Aksi 5</button>
+        </div>
+    </div>
+</body>
+</html>
